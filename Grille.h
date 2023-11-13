@@ -2,12 +2,12 @@
 #include <array>
 #include <iostream>
 
-enum class enum_direction { haut, bas, gauche, droite };
+enum class EntreUtilisateur { haut, bas, gauche, droite, debut_partie, fin_partie };
 
 class Grille {
     public:
         Grille(        );
-        void changer_grille(enum_direction);
+        void changer_grille(EntreUtilisateur entre);
         //mettre le tableau de la grille en type pour getGrille
         unsigned getGrille();
         unsigned getScore();
