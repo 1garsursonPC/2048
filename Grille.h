@@ -16,6 +16,7 @@ class Grille {
 
     private:
         std::array <std::array<unsigned,4>,4>_grille;
+        unsigned _score;
         void deplacer();
         void fusionner();
         void ajout_2();
